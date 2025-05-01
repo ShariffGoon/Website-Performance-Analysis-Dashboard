@@ -1,77 +1,78 @@
-# Website Performance Analysis Dashboard
+# Website Performance Analysis Dashboard – Case Study
 
-##  Project Overview
+## Project Overview
 
-This project presents a comprehensive Website Performance Analysis Dashboard designed to help a digital agency understand and address user behavior challenges on their client websites. The goal was to uncover why users were leaving the sites quickly and not converting, using data-driven insights.
+This project is a website performance analysis dashboard developed using Power BI. It provides a comprehensive and interactive visualization of key website metrics to help organizations understand user behavior and identify areas for strategic improvement. The dashboard is designed to be user-friendly for stakeholders without technical backgrounds, allowing them to make informed decisions based on visual insights.
 
 ---
 
 ## Problem Statement
 
-The digital agency faced the following issues:
-- High bounce rates across several landing pages
-- Short session durations, especially on mobile devices
-- Lack of clarity on how users interacted with the websites
-- Difficulty identifying which pages or devices were underperforming
+Despite steady web traffic, the organization lacked clarity on how users were engaging with the website across different traffic sources and geographic locations. Key business questions remained unanswered, such as:
 
-These problems hindered user engagement and reduced overall conversion rates.
+- Which traffic sources deliver the most engaged users?
+- Are specific regions or user groups underperforming?
+- What is contributing to the high bounce rate and how can conversion be improved?
 
----
-
-## Solution Strategy
-
-To tackle the above challenges, a structured data analysis approach was implemented:
-
-1. **Data Collection**  
-   Aggregated user behavior and performance metrics from various data sources such as Google Analytics and web server logs.
-
-2. **Data Cleaning & Processing**  
-   Utilized Python with Pandas to clean, filter, and standardize session and device-level data.
-
-3. **Data Integration**  
-   Combined multiple data sources using SQL queries to create a unified dataset for analysis.
-
-4. **Dashboard Development**  
-   Created an interactive dashboard in Power BI to visualize key metrics including:
-   - Bounce rates by device and page
-   - Session duration trends
-   - Top-performing and low-performing pages
-   - Traffic sources and user flow
+There was a clear need for a visual analytics tool that could consolidate this information and highlight actionable insights.
 
 ---
 
-## Tools & Technologies Used
+## Methodology
 
-- **Python (Pandas)** – for data cleaning and transformation  
-- **SQL** – for data integration and querying  
-- **Power BI** – for data visualization and dashboard design  
-- **Excel** – for supplementary analysis and validation  
+To address the problem, the project followed a structured approach combining Python for data preparation and Power BI for visualization.
+
+1. **Data Preparation**
+   - Used Python libraries, specifically Pandas and NumPy, to clean, organize, and structure the raw dataset.
+   - Handled missing values, standardized data formats, and ensured consistent naming for traffic sources (e.g., Organic, Paid, Referral, Social, Direct).
+   - Grouped and aggregated data by country to enable comparative analysis across regions.
+   - Exported the cleaned dataset for integration into Power BI.
+
+2. **Dashboard Development with Power BI**
+   - Imported the prepared dataset into Power BI Desktop.
+   - Created interactive visuals including bar charts, column charts, and summary KPI cards to represent core metrics such as bounce rate, page views, session duration, time on page, and conversion rate.
+   - Developed DAX (Data Analysis Expressions) formulas to calculate aggregated values and derive insights.
+   - Implemented slicers and filters for real-time exploration of traffic source and regional performance.
+
+3. **Insight Extraction**
+   - Explored relationships between user behavior metrics and geographic or channel-based performance.
+   - Identified which traffic sources and countries had the highest engagement and conversions, as well as those with lower performance needing attention.
 
 ---
 
-## 📈 Project Impact
+## Results and Key Insights
 
-- Identified **low-performing pages** that were causing early exits
-- Uncovered **device-specific performance issues**, especially on mobile
-- Guided **content and design improvements**
-- Resulted in:
-  - **25% increase in session duration**
-  - **Improved user retention**
-  - **Better understanding of user flow and engagement**
+- **Bounce Rate**: The average bounce rate was 569.53, which is significantly high. This was especially evident for visitors arriving through direct and paid traffic, suggesting that the landing pages or campaigns might not be aligned with user expectations.
+
+- **Top Performing Channels**:
+  - Organic and Referral traffic sources showed the highest session durations, returning visitors, and conversion rates.
+  - Referral traffic, in particular, had the highest conversion efficiency, indicating successful content distribution or affiliate partnerships.
+
+- **Geographic Engagement**:
+  - Visitors from California and Washington demonstrated the highest levels of engagement, with longer time spent on pages and lower bounce rates.
+  - In contrast, users from New York and Florida had shorter sessions and higher bounce rates, suggesting a need for location-specific content optimization.
+
+- **Conversion Opportunities**:
+  - Return visits were highest from organic and referral sources, presenting a strong opportunity for retargeting or loyalty-building campaigns.
+  - Insights from the dashboard can guide optimization of marketing spend and web content strategy to increase user engagement and conversions.
 
 ---
 
-##  Folder Structure
+## Tools and Technologies
 
-```text
-website-performance-dashboard/
-├── README.md
-├── data/
-│   ├── raw/           # Unprocessed original data
-│   └── cleaned/       # Cleaned datasets after preprocessing
-├── notebooks/         # Jupyter notebooks for data analysis
-├── scripts/           # Python scripts for automation
-├── sql/               # SQL scripts for data integration
-├── dashboard/         # Power BI dashboard files (.pbix)
-├── excel/             # Excel summaries or exported tables
-├── images/            # Dashboard screenshots or visual assets
+- Power BI Desktop – used for dashboard creation and visual analytics
+- Python (Pandas, NumPy) – used for data cleaning and transformation
+- DAX (Data Analysis Expressions) – used for calculated fields and performance metrics
+- Data storytelling techniques – applied to highlight trends, patterns, and anomalies
+
+---
+
+## Contact
+
+For questions, collaboration, or feedback regarding this project, please feel free to reach out via LinkedIn:
+
+**Shariff Sebe**  
+[www.linkedin.com/in/shariff-sebe-8092a0226](https://www.linkedin.com/in/shariff-sebe-8092a0226)
+
+---
+
